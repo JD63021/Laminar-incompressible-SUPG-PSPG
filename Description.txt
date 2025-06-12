@@ -1,0 +1,14 @@
+Description : 
+1) quadratic_solver_stationary.m : driver file
+2) mesh5_gmsh.m : Reads a P2-P1 gmsh mesh as specified in testcase
+   mesh5_gmsh_1.m: Reads a P1-P1 gmsh mesh as specified in testcase
+3) main_stationary_picard.m: Runs the iteration loop
+4) build_stiffness_operator_stationary: Builds stiffness matrix for P2-P1 case
+5) build_stiffness_operator_stationaryP1: Builds stiffness matrix for P1-P1 case
+6) testcase.m: builds the testcase (mesh files can be chosen here. Physical gmsh tags for inlet, walls and do nothing are readily prescribed here)
+7) update_bc, globalrow, global pressure row: some helpers used in updating boundary conditions in iteration 
+8) precomputeShapeFunctionsP1/P2: shape function libraries for precomputing shapes at gauss points
+9) writePVD/VTP: files for writing output to paraview
+10) quada/b/c/d...p2/p1  : various ready gmsh files in P2-P1 pairs use as per letter tags together. eg: use quadap1 along with quadap2 only(not with quadbp2 for example since quadbp2 only goes with quadbp1)
+
+
